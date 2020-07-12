@@ -8,5 +8,9 @@
     <Folder Include="Views\HealthySnacks\" />
     <Folder Include="Views\Gallery\" />
     <Folder Include="Views\Reviews\" />
+    <Folder Include="Interfaces\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite" Version="1.0.113.1" />
   </ItemGroup>
 </Project>

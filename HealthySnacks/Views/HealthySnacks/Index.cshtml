@@ -1,6 +1,22 @@
-﻿@{
+﻿@using HealthySnacks.Models
+@model IEnumerable<HealthySnacks>
+
+
+@{
     ViewData["Title"] = "Healthy Snacks";
 }
 
+    <div>
+        <h2>Here is are awesome snacks</h2>
+    </div>
 
-<h3>Here will be a list of Snacks</h3>
+
+@{
+    foreach (var healthySnacks in Model)
+    {
+        <div>
+            <h4>HealthySnack Name: @healthySnacks.Name</h4>
+            <p>Price: @healthySnacks.Price.ToString("c")</p>
+        </div>
+    }
+}
