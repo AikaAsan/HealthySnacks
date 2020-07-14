@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,8 @@ namespace HealthySnacks
     {
         public static void Main(string[] args)
         {
+            Database databaseObject = new Database();
+
             CreateHostBuilder(args).Build().Run();
         }
 
