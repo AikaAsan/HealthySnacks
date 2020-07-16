@@ -12,7 +12,7 @@ namespace HealthySnacks
 
         public Database()
         {
-            sqliteConnection = new SQLiteConnection("Data Source=database.sqlite3");
+            sqliteConnection = new SQLiteConnection("Data Source=database.sqlite3"); 
 
             if (!File.Exists("./database.sqlite3"))
             {

@@ -9,27 +9,32 @@ namespace HealthySnacks.DataAccess
 {
     public class DatabaseContext : DbContext
     {
-        private const string DATABASE_PATH = "../HealthySnacks.DataAccess/SQLite/HealthySnacks.sqlite3";
+        private const string DATABASE_PATH = "../HealthySnacks/SQLite/HealthySnacks.sqlite3";
 
     }
-    public DatabaseContext():
-            base (new SQLiteConnection()
-        {
-            ConnectionString = new SQLiteConnectionStringBuilder() {
-                DataSource = DATABASE_PATH, ForeignKeys = true }.ConnectionString
-         }  ,true)
+    public DatabaseContext() :
+            base(new SQLiteConnection()
             {
-            if(!file.Exists(DATABASE_PATH))
-
+                ConnectionString = new SQLiteConnectionStringBuilder()
                 {
-                    SQLiteConnection.CreateFile(DATABASE_PATH);
-                }
+                    DataSource = DATABASE_PATH,
+                    ForeignKeys = true
+                }.ConnectionString
+            }, true)
+
+
+    {
+        if (!file.Exists(DATABASE_PATH))
+
+        {
+            SQLiteConnection.CreateFile(DATABASE_PATH);
+        }
+    }
 
     protected override void OnModelCreating(DbModelBuilder modelBuilder)
     {
         modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         base.OnModelCreating(modelBuilder);
-
     }
     
 }

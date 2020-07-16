@@ -9,6 +9,8 @@
     <Folder Include="Views\Gallery\" />
     <Folder Include="Views\Reviews\" />
     <Folder Include="Interfaces\" />
+    <Folder Include="Entities \" />
+    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="System.Data.SQLite" Version="1.0.113.1" />
