@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using HealthySnacks.Models;
+using HealthySnacks.Entities;
 
 namespace HealthySnacks.Interfaces
 {
     public interface IHealthySnacksRepository
     {
-        IEnumerable<IHealthySnacksRepository> healthySnacks {get; set;}
+        IEnumerable<HealthySnacks> healthySnacks { get; set; } //property will be used to get all drinks
 
-        IHealthySnacksRepository GetHealthySnacksById(int Id);
-       
+        HealthySnacks GetHealthySnacksById(int Id); //method 
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace HealthySnacks.Models
+namespace EatMoreHealthySnacks.Models
 {
     public class Category
     {
@@ -10,6 +10,6 @@ namespace HealthySnacks.Models
 
         public string Description { get; set; } // short description for each category
 
-        public List<HealthySnacks> Snacks { get; set; }
+        public List<HealthySnacks> Snacks { get; set; } //Entity framework will make one to many relationship between Category and CategoryId
     }
 }

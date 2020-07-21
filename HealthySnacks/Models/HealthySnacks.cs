@@ -1,5 +1,5 @@
 ﻿using System;
-namespace HealthySnacks.Models
+namespace EatMoreHealthySnacks.Models
 {
     public class HealthySnacks
     {

@@ -1,4 +1,4 @@
-﻿using HealthySnacks.DataAccess.Entities;
+﻿using EatMoreHealthySnacks.DataAccess.Entities;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Data.SQLite;

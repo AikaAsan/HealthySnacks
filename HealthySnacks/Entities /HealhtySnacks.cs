@@ -16,32 +16,28 @@ namespace HealthySnacks.Entities
 
 
         [Column("Name")]
-        [Key]
         public string Name { get; set; }
 
 
-        [Column("Description")]
-        [Key]
+        [Column("Description")]     
         public string Description { get; set; }
 
 
-        [Column("Price")]
-        [Key]
+        [Column("Price")]      
         public decimal Price { get; set; }
 
 
-        [Column("ImageUrl")]
-        [Key]
+        [Column("ImageUrl")]       
         public string ImageUrl { get; set; }
 
 
 
-        [Column("CategoryId")]
-        [Key]
+        [Column("CategoryId")]     
         public int CategoryId { get; set; }
 
-        [Column("Category")]
-        [Key]
+
+
+        [Column("Category")]      
         public virtual Category Category { get; set; }
 
  

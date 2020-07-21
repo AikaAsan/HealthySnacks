@@ -2,7 +2,7 @@
 using HealthySnacks.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace HealthySnacks.Controllers
+namespace EatMoreHealthySnacks.Controllers
 {
     public class HealthySnacksController : Controller 
     {
